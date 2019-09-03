@@ -1,6 +1,6 @@
 # Flutter-UI
 
-####设置 Android 状态栏变透明
+* #### 设置 Android 状态栏变透明
 
 在 main() 函数中添加设置系统 UI 样式的代码：
 
@@ -16,7 +16,7 @@ SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
 }
 ```
 
-####移除滚动视图的水波纹效果
+* #### 移除滚动视图的水波纹效果
 
 ~~除非你的应用设计完全遵循 MD 风格，否则这玩意真的很丑~~
 
