@@ -59,3 +59,25 @@ ScrollConfiguration(
 )
 ```
 
+* #### 自定义 MaterialColor
+
+根据 Material Design 的指南，自定义一个 `MaterialColor` 需要十个的渐变颜色，对于没有艺术细胞的开发来说很痛苦，只能使用 `opacity` 这个不透明度属性来自定义，这样只需要一个色值就可以了。以下使用了中国传统颜色靛青来实现：
+
+```dart
+MaterialColor pColor = MaterialColor(
+    0xFF177cb0,
+    <int, Color>{
+      50: Color.fromRGBO(23, 124, 176, .1),
+      100: Color.fromRGBO(23, 124, 176, .2),
+      200: Color.fromRGBO(23, 124, 176, .3),
+      300: Color.fromRGBO(23, 124, 176, .4),
+      400: Color.fromRGBO(23, 124, 176, .5),
+      500: Color.fromRGBO(23, 124, 176, .6),
+      600: Color.fromRGBO(23, 124, 176, .7),
+      700: Color.fromRGBO(23, 124, 176, .8),
+      800: Color.fromRGBO(23, 124, 176, .9),
+      900: Color.fromRGBO(23, 124, 176, 1),
+    },
+  );
+```
+
